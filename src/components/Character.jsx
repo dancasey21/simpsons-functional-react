@@ -20,29 +20,21 @@ const Character = (props) => {
   if (characterDirection === "left") {
     return (
       <>
-        <div>
-          <div>
-            <Name character={character} id={id} />
-            <Quote quote={quote} />
-            <Image image={image} character={character} />
-            <Delete onDeleteSimpson={onDeleteSimpson} />
-            <Like liked={liked} onLikeSimpson={onLikeSimpson} />
-          </div>
-        </div>
+        <Name character={character} id={id} />
+        <Quote quote={quote} />
+        <Image image={image} character={character} />
+        <Delete onDeleteSimpson={onDeleteSimpson} />
+        <Like liked={liked} onLikeSimpson={onLikeSimpson} />
       </>
     );
   }
   return (
     <>
-      <div>
-        <div>
-          <Name character={character} id={id} />
-          <Quote quote={quote} />
-          <Image image={image} character={character} />
-          <Delete onDeleteSimpson={onDeleteSimpson} />
-          <Like onLikeSimpson={onLikeSimpson} />
-        </div>
-      </div>
+      <Name character={character} id={id} />
+      <Quote quote={quote} />
+      <Image image={image} character={character} />
+      <Delete onDeleteSimpson={onDeleteSimpson} />
+      <Like onLikeSimpson={onLikeSimpson} />
     </>
   );
 };

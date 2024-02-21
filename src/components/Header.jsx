@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = ({ onUserInput }) => {
+const Header = ({ onUserInput }, { onSimpsonsSort }) => {
   return (
     <>
       <div>
@@ -14,6 +14,13 @@ const Header = ({ onUserInput }) => {
           name="search"
           placeholder="Search Character"
         />
+      </div>
+      <div>
+        <label htmlFor="sort">Sort By </label>
+        <select id="sort" onChange={onSimpsonsSort}>
+          <option value="A-Z">A-Z</option>
+          <option value="Z-A">Z-A</option>
+        </select>
       </div>
     </>
   );

@@ -1,12 +1,12 @@
 import React from "react";
 
 const Like = (props) => {
-  const { onLikeSimpson, character, liked } = props;
+  const { onLikeSimpson, id, liked } = props;
   return (
     <div>
       <button
         style={{ backgroundColor: liked ? "red" : "blue" }}
-        onClick={() => onLikeSimpson(character)}
+        onClick={() => onLikeSimpson(id)}
       >
         Like
       </button>
